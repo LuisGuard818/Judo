@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+##
+
+If using npm run "npm install" to ensure you have all of the correct packages. Once completed run "npm start" in order to run dev server. Finally, navigate to `http://localhost:4200/` in your web browser
