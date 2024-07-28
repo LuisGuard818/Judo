@@ -1,20 +1,26 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.css']
+  styleUrls: ['./landing.component.css'],
 })
 
 export class LandingComponent {
-  constructor(private router: Router) {}
-
-  goToLogin() {
-    this.router.navigate(['/login']);
+  isVisible: boolean = false
+  visibility: boolean = this.isVisible
+  constructor() {
   }
-
-  goToRegister() {
-    this.router.navigate(['/register']);
+  ngOnInit() {
+  }
+  showModal() {
+    this.isVisible = true
+    console.log(this.isVisible)
+  }
+  onClose(){
+    this.isVisible = false
+    console.log(this.isVisible)
   }
 }

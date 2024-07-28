@@ -1,26 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="landing.component.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <section class="header-section">
+
+   <section class="header-section">
       <div class="header-content-container">
         <div class="logo"></div>
         <h1 class="header-header">מתאמץ, מתאמן, מנצח.</h1>
         <p class="header-paragraph">
           יוניפייט חיפה - המקום שבו כל אחד מוצא את הכוח בתוכו!
         </p>
-        <button class="header-cta btn">
+        <button (click)="showModal()" class="header-cta btn">
           <span>להתחלה!</span>
         </button>
       </div>
@@ -77,10 +63,10 @@
           את התלמידים שלהם להצלחה מרבית בתחום הג'ודו.
         </p>
         <div class="training-crew-img-container">
-          <img src="path/to/image1.jpg" alt="Image 1" class="training-crew-img training-crew-img1" />
+          <!-- <img src="path/to/image1.jpg" alt="Image 1" class="training-crew-img training-crew-img1" />
           <img src="path/to/image2.jpg" alt="Image 2" class="training-crew-img training-crew-img2" />
           <img src="path/to/image3.jpg" alt="Image 3" class="training-crew-img training-crew-img3" />
-          <img src="path/to/image4.jpg" alt="Image 4" class="training-crew-img training-crew-img4" />
+          <img src="path/to/image4.jpg" alt="Image 4" class="training-crew-img training-crew-img4" /> -->
         </div>
       </div>
     </section>
@@ -161,5 +147,17 @@
         </div>
       </div>
     </section>
-  </body>
-</html>
+
+    <div *ngIf="isVisible">
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close" (click)="onClose()">&times;</span>
+          <h1>הצטרפו למשפחת יוניפייט חיפה</h1>
+          <p>הצטרפו למשפחת יוניפייט חיפה ותהנו מהטיפול המקצועי שלנו.</p>
+          <button class="modal-cta btn">
+            <span>להתחלה!</span>
+          </button>
+        </div>
+      </div>
+    <button (click)="onClose()">test close modal</button>
+    </div>
