@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    direction: rtl;
+    /* unicode-bidi: bidi-override; */
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* h1, h2, h3,h4,h5,h6,p,span{
+      direction: rtl;
+  } */
+  
+  html {
+    background-color: #e7ebf4;
+  }
+  
+  .header-section {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        101deg,
+        rgba(255, 255, 255, 0.903) 0%,
+        rgba(255, 255, 255, 0.903) 60%,
+        rgba(174, 174, 174, 0) 70%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url("../../assets/images/timeline2-alt.jpg");
+    background-size: cover;
+    color: #2a3b8b;
+  }
+  
+  .header-content-container {
+    /* background-color: rgba(0, 0, 0, 0.562); */
+    width: 60%;
+    height: 100%;
+    float: left;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+    font-size: 4rem;
+    padding-right: 5%;
+    position: relative;
+  }
+  
+  .header-header {
+    font-size: 5.5rem;
+    margin-top: 13rem;
+    margin-right: 7rem;
+  }
+  
+  .header-paragraph {
+    margin-right: 8rem;
+  }
+  
+  .logo {
+    width: 10rem;
+    height: 10rem;
+    background-image: url("../../assets/images/judo-logo.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 5rem;
+    top: 3rem;
+  }
+  
+  .btn {
+    all: unset;
+    background-color: rgb(255, 141, 55);
+    color: white;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 1px 25px 0px rgba(0, 0, 0, 0.46);
+    transition: 0.1s;
+  }
+  
+  .btn:hover {
+    background-color: rgb(254, 136, 46);
+    transform: translate(0, -0.3rem) scale(102%);
+    box-shadow: 4px 1px 35px 0px rgba(0, 0, 0, 0.46);
+  }
+  
+  .btn:active {
+    background-color: #cc7029;
+    transform: translate(0, 0.2rem) scale(98%);
+    box-shadow: 4px 1px 35px 0px rgba(0, 0, 0, 0.46);
+  }
+  
+  .header-cta {
+    width: 16rem;
+    height: 4rem;
+    padding: 2rem 4rem;
+    margin-right: 8rem;
+    margin-top: 4rem;
+  }
+  
+  .right-decision {
+    width: 100%;
+    height: 120vh;
+    padding-top: 4rem;
+  }
+  
+  .right-decision-header {
+    color: rgb(42, 59, 139);
+    font-size: 5rem;
+    margin-right: 4rem;
+  }
+  
+  .decisions-list {
+    display: flex;
+    width: 70%;
+    height: 73%;
+    margin-right: 10rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .decision {
+    height: 14%;
+    width: 100%;
+    border-bottom: 4px solid #2a3b8b;
+    font-size: 4rem;
+    font-weight: 300;
+  }
+  
+  .decision b {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  
+  .training-crew {
+    width: 100%;
+    height: 80vh;
+    background: rgb(10, 17, 50);
+    background: linear-gradient(
+      270deg,
+      rgba(10, 17, 50, 1) 0%,
+      rgba(21, 32, 84, 1) 100%
+    );
+    /* color: #cc7029; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20rem;
+    box-shadow: 2px -1px 45px 11px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 2px -1px 45px 11px rgba(0,0,0,0.39);
+    -moz-box-shadow: 2px -1px 45px 11px rgba(0,0,0,0.39);
+  }
+  
+  .training-crew-header {
+    font-size: 5rem;
+    color: rgb(246, 126, 35);
+    margin-right: 10rem;
+    margin-top: 5rem;
+  }
+  
+  .training-crew-paragraph {
+    font-size: 2rem;
+    color: white;
+    width: 60%;
+    padding-right: 7rem;
+  }
+  
+  .training-crew-content-container {
+    width: 100%;
+    height: 40rem;
+    /* background: aqua; */
+    display: flex;
+    line-height: 4rem;
+    font-weight: 300;
+    justify-content: space-evenly;
+  }
+  
+  .training-crew-img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    height: min-content;
+  }
+  
+  .training-crew-img {
+    width: 23rem;
+    height: 17rem;
+    position: relative;
+    transition: 0.2s;
+    border-radius: 0.4rem;
+  }
+  
+  .training-crew-img2 {
+    background-image: url("../../assets/images/trainer2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .training-crew-img1 {
+    background-image: url("../../assets/images/trainer1.jpeg");
+    background-size: cover;
+    background-position: center;
+    transform: translate(-3rem, 10rem);
+  }
+  
+  .training-crew-img4 {
+    background-image: url("../../assets/images/trainer4.jpeg");
+    background-size: cover;
+    background-position: center;
+    transform: translate(3rem, -2rem);
+    /* z-index: -2; */
+  }
+  .training-crew-img3 {
+    background-image: url("../../assets/images/trainer3.jpg");
+    background-size: cover;
+    background-position: center;
+    transform: translate(3rem, 6rem);
+    /* z-index: -1; */
+  }
+  
+  .training-crew-img1:hover {
+    z-index: 19 !important;
+    transform: scale(105%) translate(-3rem, 10rem);
+    border: #cc7029 solid 0.4rem;
+  }
+  .training-crew-img2:hover {
+    z-index: 19 !important;
+    transform: scale(105%);
+    border: #cc7029 solid 0.4rem;
+  }
+  .training-crew-img3:hover {
+    z-index: 19 !important;
+    transform: scale(105%) translate(3rem, 6rem);
+    border: #cc7029 solid 0.4rem;
+  }
+  .training-crew-img4:hover {
+    z-index: 19 !important;
+    transform: scale(105%) translate(3rem, -2rem);
+    border: #cc7029 solid 0.4rem;
+  }
+  
+  .club-achivements {
+    width: 100%;
+    height: 120vh;
+    background-color: aqua;
+  }
+  
+  .timeline-section {
+    width: 100%;
+  }
+  
+  .timeline-header {
+    color: #2a3b8b;
+    font-size: 5.5rem;
+    text-align: center;
+    background-color: orange;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem 4rem;
+  }
+  
+  .timeline-container {
+    display: grid;
+    grid-template-columns: auto 0.3rem auto;
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    height: 250vh;
+    grid-auto-flow: row;
+    row-gap: 7rem;
+    column-gap: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  .line {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    background-color: orange;
+  }
+  
+  .timeline-item {
+    background-color: orange;
+    transform: translate(0, 25%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-direction: row-reverse;
+  }
+  
+  .timeline-item:nth-child(even) {
+    grid-column: 3;
+    clip-path: polygon(
+      0 0,
+      95% 0,
+      95% 10%,
+      100% 17.5%,
+      95% 25%,
+      95% 100%,
+      0 100%,
+      0 0
+    );
+  }
+  
+  .timeline-item:nth-child(odd) {
+    grid-column: 1;
+    clip-path: polygon(
+      100% 0,
+      5% 0,
+      5% 10%,
+      0 17.5%,
+      5% 25%,
+      5% 100%,
+      100% 100%,
+      100% 0
+    );
+  }
+  
+  .timeline-item1 {
+    grid-row: 1;
+  }
+  .timeline-item2 {
+    grid-row: 2;
+  }
+  .timeline-item3 {
+    grid-row: 3;
+  }
+  .timeline-item4 {
+    grid-row: 4;
+  }
+  .timeline-item5 {
+    grid-row: 5;
+  }
+  
+  .timeline-item1 > .timeline-item-image-container {
+    background-image: url(../../assets/images/תחרות-בגרמניה.jpg);
+  }
+  .timeline-item2 > .timeline-item-image-container {
+      background-image: url(../../assets/images/timeline2-alt.jpg);
+  }
+  .timeline-item3 > .timeline-item-image-container {
+      background-image: url(../../assets/images/timeline2-alt.jpg);
+  
+  }
+  .timeline-item4 > .timeline-item-image-container {
+      background-image: url(../../assets/images/timeline2-alt.jpg);
+  
+  }
+  .timeline-item5 > .timeline-item-image-container {
+      background-image: url(../../assets/images/timeline2-alt.jpg);
+  
+  }
+  
+  
+  .timeline-item-image-container{  
+      width: 50%;
+      background-position: right; 
+      background-size: cover;
+      transition: .2s;
+  }
+  /* 
+  .timeline-item-image-container:hover{
+      width: 50rem;   
+      transition: .2s;
+      
+  }
+  
+  .timeline-item-image-container:hover ~ .timeline-item-content{
+      width: 0;
+      color: white;
+  } */
+        
+  .timeline-item-content{
+      width: 50%;
+      min-width: 50%;
+  }
+  
+  
+  .timeline-item:nth-child(odd){
+      padding-left: 4.5rem ;
+  }
+  .timeline-item:nth-child(even){
+      padding-right: 4.5rem ;
+  }
+  
+  
+  .timeline-item-content>p{
+      text-align: center;
+      font-size: 2.3rem;
+      max-width: 30rem;
+      word-wrap: break-word;
+      
+  }
+  
+  .timeline-item-content>h4{
+      font-size: 3.5rem;    
+      color: #101943;
+      text-align: center;
+      max-width: 30rem;
+  
+  }
